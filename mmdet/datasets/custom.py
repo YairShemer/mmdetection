@@ -214,6 +214,9 @@ class CustomDataset(Dataset):
             scale_ranges (list[tuple] | None): Scale ranges for evaluating mAP.
                 Default: None.
         """
+        ############ Debug ###################
+        metric = 'mAP'
+        #######################################
         if not isinstance(metric, str):
             assert len(metric) == 1
             metric = metric[0]
